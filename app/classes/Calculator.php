@@ -22,18 +22,19 @@ class Calculator
         switch ($this->operator)
         {
             case '+':
-                echo $this->add();
+                $this->result = $this->add();
                 break;
             case '-':
-                echo $this->sub();
+                $this->result = $this->sub();
                 break;
             case '*':
-                echo $this->multiplication();
+                $this->result = $this->multiplication();
                 break;
             case '/':
-                echo $this->division();
+                $this->result = $this->division();
                 break;
         }
+        return $this->result;
     }
 
     protected function add()

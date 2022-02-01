@@ -4,4 +4,6 @@ use App\classes\Calculator;
 
 $calculator = new Calculator($_POST);
 
-$calculator->index();
+$result     = $calculator->index();
+
+include 'index.php';

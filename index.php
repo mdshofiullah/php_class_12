@@ -44,7 +44,7 @@
                                 <div class="form-group row">
                                     <label for="" class="col-form-label col-md-3">Result</label>
                                     <div class="col-md-9">
-                                        <input type="text" readonly class="form-control"/>
+                                        <input type="text" value="<?php echo isset($result) ? $result: ''; ?>" readonly class="form-control"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
