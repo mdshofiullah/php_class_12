@@ -32,13 +32,24 @@
                                 <div class="form-group row">
                                     <label for="" class="col-form-label col-md-3">First Number</label>
                                     <div class="col-md-9">
-                                        <input type="number" name="first_number" class="form-control"/>
+                                        <input type="number" required name="first_number" class="form-control"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="" class="col-form-label col-md-3">Second Number</label>
                                     <div class="col-md-9">
-                                        <input type="number" name="second_number" class="form-control"/>
+                                        <input type="number" required name="second_number" class="form-control"/>
+                                    </div>
+                                </div>
+<!--                                *********Calculate with radio select******************   -->
+                                <div class="form-group row">
+                                    <label for="" class="col-form-label col-md-3">Select Action</label>
+                                    <div class="col-md-9">
+                                        <label for=""><input type="radio"  name="operator" checked value="+" class=""/> Addition </label>
+                                        <label for=""><input type="radio"  name="operator" value="-" class=""/> Subtraction </label>
+                                        <label for=""><input type="radio"  name="operator" value="*" class=""/> Multiplication </label>
+                                        <label for=""><input type="radio"  name="operator" value="/" class=""/> Division </label>
+                                        <label for=""><input type="radio"  name="operator" value="%" class=""/> Reminder </label>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -49,14 +60,21 @@
                                 </div>
                                 <div class="form-group row">
                                     <label for="" class="col-form-label col-md-3"></label>
-                                    <div class="col-md-9">
-                                        <input type="submit" name="operator" class="btn btn-outline-success" value="+"/>
-                                        <input type="submit" name="operator" class="btn btn-outline-success" value="-"/>
-                                        <input type="submit" name="operator" class="btn btn-outline-success" value="*"/>
-                                        <input type="submit" name="operator" class="btn btn-outline-success" value="/"/>
-                                        <input type="submit" name="operator" class="btn btn-outline-success" value="%"/>
+                                    <div class="col-nd-9">
+                                        <input type="submit" name="btn" class="btn btn-outline-success" value="Submit"/>
                                     </div>
                                 </div>
+<!--                              *****************  calculate using button*******************         -->
+<!--                                <div class="form-group row">-->
+<!--                                    <label for="" class="col-form-label col-md-3"></label>-->
+<!--                                    <div class="col-md-9">-->
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="+"/>-->
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="-"/>-->
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="*"/>-->
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="/"/>-->
+<!--                                        <input type="submit" name="operator" class="btn btn-outline-success" value="%"/>-->
+<!--                                    </div>-->
+<!--                                </div>-->
 
                             </form>
                         </div>
